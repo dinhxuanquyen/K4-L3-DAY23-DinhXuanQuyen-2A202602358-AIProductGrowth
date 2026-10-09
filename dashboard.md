@@ -47,9 +47,9 @@
 
 | Ngày | Metric (đúng 1) | Ngưỡng qua cổng | Bằng chứng vật lý | Nếu trượt |
 |:---:|---|---|---|:---:|
-| **30** | **Eval eKYC & Ký thỏa thuận Pilot v1** *(Cổng học)* | Đạt $\ge 300$ ca eval (containment $\ge 85\%$) VÀ có $\ge 1$ hotel ký MoU pilot tích hợp PMS | Báo cáo `Eval_Report_300_cases.pdf` + Hợp đồng MoU pilot có chữ ký | **FIX** (ở lại 30 ngày sửa module camera/liveness) |
-| **60** | **Lượt check-in tự động tại Hotel Pilot** | Đạt $\ge 200$ lượt Auto-PASS thật VÀ Escalation $\le 15\%$, chi phí API $\le \$0.06$/hồ sơ | File xuất dữ liệu `Telemetry_Pilot_200sessions.csv` đối soát PMS | **PIVOT** (chuyển sang Mobile Web Check-in qua QR/Zalo) |
-| **90** | **Khách sạn trả phí lũy kế & Gross Margin** | Có $\ge 5$ khách sạn trả phí gói Hybrid ($162/tháng) VÀ Gross Margin thực tế $\ge 60\%$ | 5 Hợp đồng dịch vụ SaaS ký số + Báo cáo P&L dòng tiền tháng 3 | **KILL** (thanh lý Kiosk, dừng dự án) |
+| **30** | **Số ca kiểm thử eKYC đạt chuẩn** *(Cổng học)* | Đạt $\ge 300$ ca eval (containment $\ge 85\%$) VÀ có $\ge 1$ hotel ký MoU pilot tích hợp PMS | Báo cáo `Eval_Report_300_cases.pdf` + Hợp đồng MoU pilot có chữ ký | **FIX** (ở lại 30 ngày sửa module camera/liveness) |
+| **60** | **Lượt check-in Auto-PASS tại Hotel Pilot** | Đạt $\ge 200$ lượt Auto-PASS thật VÀ Escalation $\le 15\%$, chi phí API $\le \$0.06$/hồ sơ | File xuất dữ liệu `Telemetry_Pilot_200sessions.csv` đối soát PMS | **PIVOT** (chuyển sang Mobile Web Check-in qua QR/Zalo) |
+| **90** | **Số khách sạn trả phí gói Hybrid lũy kế** | Có $\ge 5$ khách sạn trả phí ($162/tháng) VÀ Gross Margin thực tế $\ge 60\%$ | 5 Hợp đồng dịch vụ SaaS ký số + Báo cáo P&L dòng tiền tháng 3 | **KILL** (thanh lý Kiosk, dừng dự án) |
 
 **KILL CRITERIA:**  
 Dừng toàn bộ dự án Kiosk và thanh lý thiết bị trước ngày **08/01/2027** nếu sau khi đã FIX một lần mà không có tối thiểu **3 khách sạn trả phí** hoặc **Gross Margin thực tế duy trì dưới 50%** trong 2 tháng liên tiếp.
